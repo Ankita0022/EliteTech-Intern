@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #faf5f5;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1.heading {
+  font-family: 'Georgia', serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  color: #f08ca3; 
+  line-height: 1em;
+}
+
+.heading span {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2em;
+  font-weight: 200;
+  display: block;
+  margin-top: -8px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: #444; /* Black for "list" */
+}
+
+
+.date {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Task Stats */
+.task-stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.task-stats {
+  font-size: 16px;
+  color: #555;
+}
+
+.progress-bar-container {
+  width: 70%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background: #f08ca3;
+  transition: width 0.3s;
+}
+
+/* Task Input */
+.task-input {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-task-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: #f08ca3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#add-task-btn:hover {
+  background: #f08ca3;
+}
+
+/* Task Sections */
+.task-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.task-section {
+  flex: 1;
+  padding: 10px;
+  background: #ece6e6;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.task-item span {
+  flex: 1;
+  margin-left: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  background: #f44336;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d32f2f;
+}
+
+button.edit {
+  background: #ffc107;
+  margin-right: 10px;
+}
+
+button.edit:hover {
+  background: #e6a500;
+}
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-datetime {
+  font-size: 0.7em;
+  color: gray;
+  margin-top: 3px;
+}

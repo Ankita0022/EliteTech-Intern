@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('header-image.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 80px 20px;
+    color: #ffa500;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+header p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-text-fill-color: rgb(252, 252, 252);
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.bio-section, .achievements-section, .inspiration-section {
+    padding: 40px;
+    max-width: 800px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.4);
+    backdrop-filter: blur(5px);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bio-section:hover, .achievements-section:hover, .inspiration-section:hover {
+    transform: translateY(-5px);
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-container img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.intro-text {
+    width: 60%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 40px;
+    position: relative;
+}
+
+ul::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #ffa500;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ffa500;
+    transform: rotate(45deg);
+    margin-right: 15px;
+}
+
+ul li:hover {
+    transform: translateX(5px);
+    color: #ffa500;
+}
+
+.quotes {
+    text-align: center;
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.3);
+}
+
+blockquote {
+    font-size: 22px;
+    font-style: italic;
+    color: #ffa500;
+    margin: 20px 0;
+}
+
+.inspiration-section {
+    text-align: center;
+    background: rgba(255, 165, 0, 0.1);
+    border: 2px solid #ffa500;
+    padding: 30px;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+}
+
+.inspiration-section p {
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.inspiration-section::before {
+    content: "⭐";
+    font-size: 30px;
+    display: block;
+    margin-bottom: 15px;
+    color: #ffa500;
+}
+
+.inspiration-section::after {
+    content: "⭐";
+    font-size: 30px;
+    display: block;
+    margin-top: 15px;
+    color: #ffa500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #111;
+    padding: 20px;
+    font-size: 16px;
+    color: #ffa500;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:last-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .image-container img {
+        width: 200px;
+    }
+    
+    .intro-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+
+    blockquote {
+        font-size: 18px;
+    }
+}

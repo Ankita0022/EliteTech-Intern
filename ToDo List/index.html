@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Heading -->
+    <h1 class="heading">
+      TO DO
+      <span>list</span>
+    </h1>
+
+    <!-- Date Section -->
+    <p id="current-date" class="date"></p>
+
+    <!-- Task Stats and Progress Bar -->
+    <div class="task-stats-container">
+      <p class="task-stats">Tasks Completed: <span id="tasks-completed">0</span> / <span id="total-tasks">0</span></p>
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- Task Input Section -->
+    <div class="task-input">
+      <input type="text" id="task-input" placeholder="Enter a new task">
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <!-- Task Sections -->
+    <div class="task-sections">
+      <!-- Pending Tasks Section -->
+      <div class="task-section">
+        <h2>Pending Tasks</h2>
+        <div id="pending-tasks"></div>
+      </div>
+
+      <!-- Completed Tasks Section -->
+      <div class="task-section">
+        <h2>Completed Tasks</h2>
+        <div id="completed-tasks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

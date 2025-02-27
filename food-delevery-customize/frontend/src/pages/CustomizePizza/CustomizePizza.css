@@ -1,0 +1,113 @@
+.customize-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff3e6; /* Light pizza-themed background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #d35400;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.option-group {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h3 {
+    color: #e67e22;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.options-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.option {
+    flex: 0 0 auto;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f9e79f;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border: 2px solid transparent;
+    scroll-snap-align: start;
+}
+
+.option img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.option p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    border: 2px solid #e67e22;
+}
+
+/* Selected option */
+.option.selected {
+    border: 3px solid #d35400;
+    background-color: #ffcc80;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #d35400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .customize-container {
+        padding: 15px;
+    }
+
+    .option {
+        width: 100px;
+    }
+
+    .option img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .submit-btn {
+        width: 90%;
+    }
+}
